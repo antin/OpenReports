@@ -19,7 +19,8 @@
     font-size: 18px;
     text-align: center;
 }
-.object div{
+
+.object div {
     word-break: normal;
 }
 
@@ -28,7 +29,7 @@
     height: 100px;
 }
 
-.logo{
-    height:50px;
-    width:auto;
+.logo {
+    height: 50px;
+    width: auto;
 }

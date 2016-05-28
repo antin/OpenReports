@@ -8,7 +8,7 @@
     <link href="bower_components/angular-material/angular-material.css" rel="stylesheet"/>
     <link href="http://fonts.googleapis.com/earlyaccess/opensanshebrew.css" rel="stylesheet"/>
 </head>
-<body style="font-family: 'Open Sans Hebrew', sans-serif">
+<body style="font-family: 'Open Sans Hebrew', sans-serif" ng-controller="infoController">
 
 <!-- scripts -->
 <script src="bower_components/angular/angular.js"></script>
@@ -20,11 +20,23 @@
 <script src="bower_components/angular-messages/angular-messages.js"></script>
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<!-- end scripts -->
+
 
 <!-- Body -->
 <h1 style="text-align:center;"><img src="images/logo.png" class="logo"/></h1>
+<br>
 
-<div class="container" ng-controller="infoController">
+<!--
+<center>
+    <md-input-container>
+        <label>הכנס מספר של ח"כ</label>
+        <input type="text" ng-pattern="\d+" ng-model="mkId"/>
+    </md-input-container>
+</center>
+-->
+
+<div class="container" ng-repeat="info in infos">
     <div layout layout-align="center" class="row">
 
         <div md-whiteframe="3" layout="column" layout-align="center center" class="object col-lg-4 col-md-6 col-sm-12"
