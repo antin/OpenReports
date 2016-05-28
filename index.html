@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>הדו"ח הפתוח</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+    <link href="styles/main.css" rel="stylesheet"/>
+    <link href="bower_components/angular-material/angular-material.css" rel="stylesheet"/>
+    <link href="http://fonts.googleapis.com/earlyaccess/opensanshebrew.css" rel="stylesheet"/>
+</head>
+<body style="font-family: 'Open Sans Hebrew', sans-serif">
+
+<!-- scripts -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/info.controller.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-material/angular-material.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+<!-- Body -->
+<h1 style="text-align:center;"><img src="images/logo.png" class="logo"/></h1>
+
+<div class="container" ng-controller="infoController">
+    <div layout layout-align="center" class="row">
+
+        <div md-whiteframe="3" layout="column" layout-align="center center" class="object col-lg-4 col-md-6 col-sm-12"
+             style="background-color: black">
+            <md-icon md-svg-src="svg/meeting.svg"></md-icon>
+            <span>{{info.conferences}} שעות פגישות בכנסים, פגישות עם אישי ציבור ופעילים</span>
+        </div>
+        <div md-whiteframe="3" layout="column" layout-align="center center" class="object col-lg-4 col-md-6 col-sm-12"
+             style="background-color: #D50000;">
+            <md-icon md-svg-src="svg/hammer.svg"></md-icon>
+            <span>{{info.plenum}} שעות דיונים במליאה</span>
+        </div>
+        <div md-whiteframe="3" layout="column" layout-align="center center" class="object col-lg-4 col-md-6 col-sm-12"
+             style="background-color: #0D47A1;">
+            <md-icon md-svg-src="svg/cash.svg"></md-icon>
+            <span>{{info.committees}} שעות דיונים בוועדות ציבוריות</span>
+        </div>
+
+    </div>
+    <br>
+    <div layout layout-align="center" class="row">
+
+        <div md-whiteframe="3" layout="column" layout-align="center center" class="object col-lg-4 col-md-6 col-sm-12"
+             style="background-color: #004D40">
+            <md-icon md-svg-src="svg/envelope.svg"></md-icon>
+            <span>{{info.public_help}} שעות עזרה ציבורית</span>
+        </div>
+        <div md-whiteframe="3" layout="column" layout-align="center center" class="object col-lg-4 col-md-6 col-sm-12"
+             style="background-color: #4A148C;">
+            <md-icon md-svg-src="svg/tick.svg"></md-icon>
+            <span>{{info.votes}} הצבעות על חוקים</span>
+        </div>
+        <div md-whiteframe="3" layout="column" layout-align="center center" class="object col-lg-4 col-md-6 col-sm-12"
+             style="background-color: #BF360C;">
+            <md-icon md-svg-src="svg/letter.svg"></md-icon>
+            <span>{{info.prepare_bill}} שעות הכנה לחוקים, ועדות חקיקה</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

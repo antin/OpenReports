@@ -1,0 +1,34 @@
+.box {
+    height: 100px;
+    width: 100px;
+}
+
+.red {
+    background-color: red;
+}
+
+.object {
+    color: white;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}
+
+.object span {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+.object div{
+    word-break: normal;
+}
+
+.object md-icon, i {
+    width: 100px;
+    height: 100px;
+}
+
+.logo{
+    height:50px;
+    width:auto;
+}

@@ -1,0 +1,78 @@
+{
+  "query_result": {
+    "retrieved_at": "2016-05-27T13:54:46.997178+00:00",
+    "query_hash": "1afe5afacbcd7272e1bbf5cd1104ff87",
+    "query": "select \n1 as id,506 as mk_id,36 as committees,80 as public_help,91 as votes,\n112 as conferences,47 as plenum,75 as prepare_bill\n, '1/1/2015' start_date\n, '1/2/2015' end_date\nLIMIT 5",
+    "runtime": 0.14879,
+    "data": {
+      "rows": [
+        {
+          "votes": 91,
+          "committees": 36,
+          "end_date": "1/2/2015",
+          "conferences": 112,
+          "prepare_bill": 75,
+          "mk_id": 506,
+          "plenum": 47,
+          "id": 1,
+          "public_help": 80,
+          "start_date": "1/1/2015"
+        }
+      ],
+      "columns": [
+        {
+          "friendly_name": "id",
+          "type": "integer",
+          "name": "id"
+        },
+        {
+          "friendly_name": "mk_id",
+          "type": "integer",
+          "name": "mk_id"
+        },
+        {
+          "friendly_name": "committees",
+          "type": "integer",
+          "name": "committees"
+        },
+        {
+          "friendly_name": "public_help",
+          "type": "integer",
+          "name": "public_help"
+        },
+        {
+          "friendly_name": "votes",
+          "type": "integer",
+          "name": "votes"
+        },
+        {
+          "friendly_name": "conferences",
+          "type": "integer",
+          "name": "conferences"
+        },
+        {
+          "friendly_name": "plenum",
+          "type": "integer",
+          "name": "plenum"
+        },
+        {
+          "friendly_name": "prepare_bill",
+          "type": "integer",
+          "name": "prepare_bill"
+        },
+        {
+          "friendly_name": "start_date",
+          "type": null,
+          "name": "start_date"
+        },
+        {
+          "friendly_name": "end_date",
+          "type": null,
+          "name": "end_date"
+        }
+      ]
+    },
+    "id": 133145,
+    "data_source_id": 5
+  }
+}
